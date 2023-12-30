@@ -1,37 +1,28 @@
-# PythonCompiler
-
-#### 介绍
-A Linux program to simplify and enhance the efficiency of Python installation and compilation in domestic operating systems by utilizing a single command or a visual configuration interface.
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+# PythonCompiler 1.20+rb16
+ 
+## Overview
+ 
+PythonCompiler is a tool designed to solve the dependency conflict problem when installing the new version of Python in domestic operating systems and enhance the efficiency of local compilation and installation.
+ 
+## Features
+ 
+- **Command-line interface**: Using `argparse` for a seamless command-line experience.
+- **Graphical interface**: Designed with `Tkinter` and `PyQt6` for a user-friendly visual configuration.
+- **Single-command installation**: Complete the entire compilation and installation process with a single command.
+- **Simple visual configuration**: Configure the installation process through a straightforward visual interface.
+ 
+## Usage
+ 
+1. Download and install the appropriate package:
+	* **Command-line tool**: Download and install [pythoncompiler_1.20+rb16_amd64.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
+	* **Optional: Qt/Tk graphical interface**:
+		+ Download [pythoncompiler-qt_1.20+rb16.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
+		+ Download [pythoncompiler-tk_1.20+rb16.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
+ 
+## Author
+ 
+Andrew Luo
+ 
+## License
+ 
+This project is licensed under the MIT License.
