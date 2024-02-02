@@ -16,8 +16,8 @@ PythonCompiler is a tool designed to solve the dependency conflict problem when 
 1. Download and install the appropriate package:
 	* **Command-line tool**: Download and install [pythoncompiler_1.20+rb16_amd64.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
 	* **Optional: Qt/Tk graphical interface**:
-		+ Download [pythoncompiler-qt_1.20+rb16.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
-		+ Download [pythoncompiler-tk_1.20+rb16.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
+		+ Download [pythoncompiler-qt_1.20+rb16_amd64.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
+		+ Download [pythoncompiler-tk_1.20+rb16_amd64.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
  
 ## Author
  
