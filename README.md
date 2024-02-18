@@ -28,22 +28,34 @@ After installation, you can use PythonCompiler from the command line with the fo
 usage: PythonCompiler [-h] [--version] [--latest] [--mirror MIRROR] [--download LINK] [--skip-update]
                       [--select SELECTION] [--config CONFIG] [--disable-optimizations] [--disable-shared]
                       [--without-lto] [--without-ssl] [--prefix PREFIX] [--compiler CC]
+
+A tool for Python compilement on Linux.
+
+options:
+  -h, --help            show this help message and exit
+  --version, -V, -v     show the version information and exit
+  --latest, -l          show the latest version of Python and exit
+  --mirror MIRROR, -m MIRROR
+                        select a mirror site (huaweicloud, python.org, taobao-npm, bjtu, or specified) to get  
+                        the source code of python
+  --download LINK, --link LINK, -d LINK
+                        specify the download link for the source code
+  --skip-update, --skip
+                        discard checking whether the version is valid
+  --select SELECTION, --version-selection SELECTION, -s SELECTION
+                        select a Python version (like "x.x.x"), for the latest stable version. When the link   
+                        is provided, this will help me get the exact version number if the file name format    
+                        is irregular.
+  --config CONFIG       customize configurations for ./configure, e.g. --config='--with-ssl' (DO NOT FORGET
+                        TO ADD THE EQUAL SIGN = AND APOSTROPHES '')
+  --disable-optimizations
+                        disable expensive, stable optimizations (PGO, etc.)
+  --disable-shared      disable building a shared Python library
+  --without-lto         disable Link-Time-Optimization in any build
+  --without-ssl         disable SSL in any build
+  --prefix PREFIX       installation location
+  --compiler CC, -C CC  (EXPERIMENTAL) select a C compiler for CPython
 ```
-**Options:**
-- `-h, --help`: Show this help message and exit.
-- `--version, -V, -v`: Show the version information and exit.
-- `--latest, -l`: Show the latest version of Python and exit.
-- `--mirror MIRROR, -m MIRROR`: Select a mirror site to get the source code of Python.
-- `--download LINK, --link LINK, -d LINK`: Specify the download link for the source code.
-- `--skip-update, --skip`: Discard checking whether the version is valid.
-- `--select SELECTION, --version-selection SELECTION, -s SELECTION`: Select a Python version.
-- `--config CONFIG`: Customize configurations for `./configure`.
-- `--disable-optimizations`: Disable expensive, stable optimizations.
-- `--disable-shared`: Disable building a shared Python library.
-- `--without-lto`: Disable Link-Time-Optimization in any build.
-- `--without-ssl`: Disable SSL in any build.
-- `--prefix PREFIX`: Installation location.
-- `--compiler CC, -C CC`: (EXPERIMENTAL) Select a C compiler for CPython.
 ## Contribution
 Contributions to PythonCompiler are welcome! If you would like to contribute, please follow these steps:
 1. Fork the repository on Gitee.
