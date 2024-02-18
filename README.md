@@ -1,28 +1,53 @@
-# PythonCompiler 1.20+rb16
- 
+
+# PythonCompiler
 ## Overview
- 
-PythonCompiler is a tool designed to solve the dependency conflict problem when installing the new version of Python in domestic operating systems and enhance the efficiency of local compilation and installation.
- 
+PythonCompiler is a sophisticated software tool **designed to address the challenge of dependency conflicts** when installing new versions of Python on domestic, open-source operating systems. It enhances the efficiency of local compilation and installation processes **by leveraging the Python programming language**. The tool features a command-line interface **crafted with argparse**, and offers both graphical interfaces **designed using Tkinter and PyQt6**. These interfaces streamline the entire compilation and installation process, allowing users to accomplish tasks with a single command or through a simple, visual configuration interface. Extensive testing has been conducted to ensure the software's functionality, reliability, and security, **validating its capability to fulfill its intended purpose**.
+## Current Version
+**Version 1.20+rb16**
 ## Features
- 
-- **Command-line interface**: Using `argparse` for a seamless command-line experience.
-- **Graphical interface**: Designed with `Tkinter` and `PyQt6` for a user-friendly visual configuration.
-- **Single-command installation**: Complete the entire compilation and installation process with a single command.
-- **Simple visual configuration**: Configure the installation process through a straightforward visual interface.
- 
+- **Multi-mirror site support** for downloading Python source code
+- **Rich configuration options** for customizing the compilation process
+- Two sets of **graphical interfaces** developed using Tk (simple) and Qt (simple)
+## System Dependencies
+PythonCompiler utilizes several system libraries during the compilation process. These dependencies should be available in your system's package repositories. Users can install these packages through their system's package manager. The main dependencies include:
+- g++
+- openssl
+- automake
+- ncurses
+- sqlite
+## Installation
+1. Visit the [Releases page](https://gitee.com/luoyanze07/PythonCompiler/releases) to download the latest *deb packages*.
+2. Install the packages using the following command:
+```
+sudo apt install <package_name>.deb
+```
+**Note:** PythonCompiler is currently compatible with *amd64* architecture. Support for *arm64* and *loongarch64* architectures, as well as *rpm* and *uab* (Deepin Linglong) packages, is planned for future releases.
 ## Usage
- 
-1. Download and install the appropriate package:
-	* **Command-line tool**: Download and install [pythoncompiler_1.20+rb16_amd64.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
-	* **Optional: Qt/Tk graphical interface**:
-		+ Download [pythoncompiler-qt_1.20+rb16_amd64.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
-		+ Download [pythoncompiler-tk_1.20+rb16_amd64.deb](https://gitee.com/luoyanze07/PythonCompiler/releases).
- 
-## Author
- 
-Andrew Luo
- 
-## License
- 
-This project is licensed under the MIT License.
+After installation, you can use PythonCompiler from the command line with the following options:
+```
+usage: PythonCompiler [-h] [--version] [--latest] [--mirror MIRROR] [--download LINK] [--skip-update]
+                      [--select SELECTION] [--config CONFIG] [--disable-optimizations] [--disable-shared]
+                      [--without-lto] [--without-ssl] [--prefix PREFIX] [--compiler CC]
+```
+**Options:**
+- `-h, --help`: Show this help message and exit.
+- `--version, -V, -v`: Show the version information and exit.
+- `--latest, -l`: Show the latest version of Python and exit.
+- `--mirror MIRROR, -m MIRROR`: Select a mirror site to get the source code of Python.
+- `--download LINK, --link LINK, -d LINK`: Specify the download link for the source code.
+- `--skip-update, --skip`: Discard checking whether the version is valid.
+- `--select SELECTION, --version-selection SELECTION, -s SELECTION`: Select a Python version.
+- `--config CONFIG`: Customize configurations for `./configure`.
+- `--disable-optimizations`: Disable expensive, stable optimizations.
+- `--disable-shared`: Disable building a shared Python library.
+- `--without-lto`: Disable Link-Time-Optimization in any build.
+- `--without-ssl`: Disable SSL in any build.
+- `--prefix PREFIX`: Installation location.
+- `--compiler CC, -C CC`: (EXPERIMENTAL) Select a C compiler for CPython.
+## Contribution
+Contributions to PythonCompiler are welcome! If you would like to contribute, please follow these steps:
+1. Fork the repository on Gitee.
+2. Create a feature branch and make your changes.
+3. Submit a pull request to the main branch.
+## Reporting Issues
+If you encounter any issues or have suggestions for improvement, please file an issue on the [issue tracker](https://gitee.com/luoyanze07/issues).
