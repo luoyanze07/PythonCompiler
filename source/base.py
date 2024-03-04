@@ -124,7 +124,7 @@ def main():
             sys_exit()
     
     if config in [None, '']:
-        configurations = "--prefix={}".format(prefix) + optimizations * " --enable-optimizations" + shared * " --enabled-shared" + lto * " --with-lto" + ssl * " --with-ssl"
+        configurations = "--prefix={}".format(prefix) + optimizations * " --enable-optimizations" + shared * " --enable-shared" + lto * " --with-lto" + ssl * " --with-ssl"
     else:
         configurations = config
     
