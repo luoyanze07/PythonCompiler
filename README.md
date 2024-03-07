@@ -3,7 +3,7 @@
 ## Overview
 PythonCompiler is a sophisticated software tool **designed to address the challenge of dependency conflicts** when installing new versions of Python on domestic, open-source operating systems. It enhances the efficiency of local compilation and installation processes **by leveraging the Python programming language**. The tool features a command-line interface **crafted with argparse**, and offers both graphical interfaces **designed using Tkinter and PyQt6**. These interfaces streamline the entire compilation and installation process, allowing users to accomplish tasks with a single command or through a simple, visual configuration interface. Extensive testing has been conducted to ensure the software's functionality, reliability, and security, **validating its capability to fulfill its intended purpose**.
 ## Current Version
-**Version 1.20+rb16**
+**Version 1.20 Release 16**
 ## Features
 - **Multi-mirror site support** for downloading Python source code
 - **Rich configuration options** for customizing the compilation process
