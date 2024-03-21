@@ -16,7 +16,7 @@ PythonCompiler utilizes several system libraries during the compilation process.
 - ncurses
 - sqlite
 ## Installation
-1. Visit the [Releases page](https://gitee.com/luoyanze07/PythonCompiler/releases) to download the latest *deb packages*.
+1. Visit the [Releases page](https://github.com/luoyanze07/PythonCompiler/releases) to download the latest *deb packages*.
 2. Install the packages using the following command:
 ```
 sudo apt install <package_name>.deb
@@ -62,4 +62,4 @@ Contributions to PythonCompiler are welcome! If you would like to contribute, pl
 2. Create a feature branch and make your changes.
 3. Submit a pull request to the main branch.
 ## Reporting Issues
-If you encounter any issues or have suggestions for improvement, please file an issue on the [issue tracker](https://gitee.com/luoyanze07/issues).
+If you encounter any issues or have suggestions for improvement, please file an issue on the [issue tracker](https://github.com/luoyanze07/issues).
